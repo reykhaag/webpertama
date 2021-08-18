@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CONTACT US</title>
+    <link rel="icon" href="garuda.png" type="image/png">
+    <link rel="shortcut icon" href="garuda.ico" type="img/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<center><body style="background-color:black;">
+</head>
+<body>
+  <div id="nav">
+        <h1><a href="index.html">CONTACT US</a></h1>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="image.html">IMAGE</a></li>
+            <li id="hello"><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+  </div>
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:#hover {
+  background-color: #45A049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<table border="1"> 
+<div class="container">
+  <div style="text-align:center">
+    <p>For criticism and suggestions, please fill in the form:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Jakartamap.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+        <option value="-">-</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Jerman</option>
+        <option value="usa">America</option>
+        <option value="Indonesian">Indonesian</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
